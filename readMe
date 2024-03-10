@@ -1,0 +1,15 @@
+.reademe
+
+
+
+To install Postgres Docker Image: Type the following command from root directory in terminal
+
+docker compose up -d
+
+To Create Database from terminal: From terminal type:
+
+docker exec -it postgres bash
+
+psql -U postgres
+
+CREATE DATABASE mhDB;

@@ -1,0 +1,25 @@
+Contact : tel : fix & portable 
+            mail
+            address
+            nom société
+            descriptions
+
+les prestations(services, spécialité) : servive ==> plusierus services 
+                  description
+                  photo
+
+les sponsors  : nom 
+               image
+
+
+Actualité : description 
+            image 
+            titre 
+            link (lien vers pdf)
+            
+
+
+
+
+
+            
