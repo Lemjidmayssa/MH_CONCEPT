@@ -12,4 +12,4 @@ docker exec -it postgres bash
 
 psql -U postgres
 
-CREATE DATABASE mhDB;
+CREATE DATABASE mhconcept;
