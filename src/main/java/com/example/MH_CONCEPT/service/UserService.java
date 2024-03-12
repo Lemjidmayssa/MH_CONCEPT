@@ -17,12 +17,16 @@ public class UserService {
 
     public String saveUser(User user) {
         if (null != user) {
+          Optional<User> user1 =  userRepo.findById(user.getId());
+          if (user1.isPresent()) {
+              throw new RuntimeException("User existe déjà");
+          }
             userRepo.save(user);
         }
         return user.getId();
     }
 
-    public String deleteuser(String id) {
+    public String deleteUser(String id) {
         if (null != id) {
             userRepo.deleteById(id);
         }
@@ -43,7 +47,7 @@ public class UserService {
                 userToSet.setCompanyName(user.getCompanyName());
                 userRepo.save(userToSet);
             } else {
-                throw new Exception();
+                throw new Exception("user not found");
             }
         }
         return id;
